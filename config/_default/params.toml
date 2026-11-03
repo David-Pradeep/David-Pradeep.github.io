@@ -1,0 +1,52 @@
+# Blowfish theme options: https://blowfish.page/docs/configuration/
+
+colorScheme = "ocean" # blowfish, avocado, ocean, forest, slate, noir, neon, ... (themes/blowfish/assets/css/schemes)
+defaultAppearance = "light"
+autoSwitchAppearance = true # follow the visitor's system setting
+
+enableSearch = true
+enableCodeCopy = true
+
+# Optional, privacy-friendly analytics: create a site at goatcounter.com and put its code here.
+goatcounter = ""
+
+[header]
+  layout = "fixed"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "landing" # landing | profile | hero | background | page | card (content/_index.md drives it)
+  showRecent = false # the landing layout lists posts via the `list` shortcode in content/_index.md
+
+[article]
+  showDate = true
+  showAuthor = false
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = true
+  showPagination = true
+  showHeadingAnchors = true
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showCards = true
+  groupByYear = false
+  cardView = true
+
+[taxonomy]
+  showTermCount = true
+  cardView = true
+
+[term]
+  cardView = true

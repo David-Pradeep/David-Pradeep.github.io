@@ -2,7 +2,7 @@
 title: "On-device AI on mobile: why it matters"
 date: 2026-11-01T12:00:00+05:30
 summary: "Running models on the phone changes the trade-offs for latency, privacy and cost."
-tags: ["ai", "mobile", "android", "ios"]
+tags: ["on-device", "android", "npu"]
 categories: ["AI", "Mobile"]
 ---
 

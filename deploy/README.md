@@ -6,7 +6,9 @@ The site is plain static HTML (`hugo --gc --minify` writes it to `public/`). Pic
 - Connect the repo in the Cloudflare dashboard.
 - Build command: `hugo --gc --minify`
 - Output directory: `public`
-- Environment variables: `HUGO_VERSION=0.169.0`, `HUGO_BASEURL=https://<your-domain>/`
+- Environment variables: `HUGO_VERSION=0.167.0`, `HUGO_BASEURL=https://<your-domain>/`
+
+Blowfish supports Hugo 0.164.0 to 0.167.0 only, so keep `HUGO_VERSION` inside that range.
 
 ## Your own server (rsync + Caddy or nginx)
 Build anywhere (CI, or `make build`), then copy the folder:

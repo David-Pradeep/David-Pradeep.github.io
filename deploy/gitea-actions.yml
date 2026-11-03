@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 env:
-  HUGO_VERSION: 0.169.0
+  HUGO_VERSION: 0.167.0
   HUGO_BASEURL: https://blog.example.com/ # change to your public URL
 
 jobs:

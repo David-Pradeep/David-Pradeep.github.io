@@ -1,0 +1,21 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "David Pradeep"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Notes on mobile technology, self-hosted DevOps and AI."
+
+  [params.author]
+    name = "David Pradeep"
+    headline = "Mobile · Self-hosted DevOps · AI"
+    image = "img/avatar.svg"
+    links = [
+      { github = "https://github.com/David-Pradeep" },
+      { rss = "index.xml" },
+    ]

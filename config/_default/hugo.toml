@@ -1,0 +1,21 @@
+# Override baseURL at build time with the HUGO_BASEURL env var (or `hugo -b <url>`).
+theme = "blowfish"
+baseURL = "https://david-pradeep.github.io/"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+summaryLength = 0
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # JSON powers the built-in search

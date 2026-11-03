@@ -1,5 +1,5 @@
 # Inactive template. Copy to the repo root as .gitlab-ci.yml (publishes to GitLab Pages).
-image: ghcr.io/gohugoio/hugo:v0.169.0
+image: ghcr.io/gohugoio/hugo:v0.167.0
 
 pages:
   script:

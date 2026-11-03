@@ -2,7 +2,7 @@
 title: "Self-hosting a service with Docker Compose"
 date: 2026-11-02T18:00:00+05:30
 summary: "A minimal, repeatable pattern for running a self-hosted app behind a reverse proxy."
-tags: ["docker", "self-hosted", "devops"]
+tags: ["docker", "caddy", "homelab"]
 categories: ["DevOps"]
 ---
 
