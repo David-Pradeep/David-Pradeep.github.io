@@ -1,0 +1,28 @@
+# Inactive template. Copy to .gitea/workflows/build.yml to publish from Gitea Actions.
+# Builds the site and pushes the output to a `pages` branch that a web server (or gitea-pages) serves.
+name: Build and publish
+on:
+  push:
+    branches: [main]
+
+env:
+  HUGO_VERSION: 0.169.0
+  HUGO_BASEURL: https://blog.example.com/ # change to your public URL
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Hugo
+        run: |
+          curl -fsSL -o hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i hugo.deb
+      - run: hugo --gc --minify
+      - name: Push to pages branch
+        run: |
+          cd public
+          git init -b pages
+          git config user.name "ci" && git config user.email "ci@example.com"
+          git add -A && git commit -m "Deploy ${GITHUB_SHA}"
+          git push -f "${{ github.server_url }}/${{ github.repository }}.git" pages

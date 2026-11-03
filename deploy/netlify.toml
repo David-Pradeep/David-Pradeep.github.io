@@ -1,0 +1,7 @@
+# Inactive template. Copy to the repo root as netlify.toml.
+[build]
+  command = "hugo --gc --minify -b $URL"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.169.0"

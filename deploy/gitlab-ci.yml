@@ -1,0 +1,10 @@
+# Inactive template. Copy to the repo root as .gitlab-ci.yml (publishes to GitLab Pages).
+image: ghcr.io/gohugoio/hugo:v0.169.0
+
+pages:
+  script:
+    - HUGO_BASEURL="${CI_PAGES_URL}/" hugo --gc --minify --destination public
+  artifacts:
+    paths: [public]
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
