@@ -1,0 +1,9 @@
+.git
+.github
+deploy
+public
+resources/_gen
+.hugo_build.lock
+.gitignore
+Makefile
+README.md
